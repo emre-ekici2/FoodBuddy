@@ -28,7 +28,6 @@ jobs:
           name: FoodBuddy_Artifact
           path: release
           
-      - name: GitHub Releases
-        uses: fnkr/github-action-ghr@v1.3
+
         
 
