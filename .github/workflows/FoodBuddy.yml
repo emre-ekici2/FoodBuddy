@@ -12,9 +12,6 @@ jobs:
       - uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 3.1.x
-          
-      - name: Install rsync
-        uses: actions/setup-rsync@v1
 
       - name: Restore dependencies
         run: dotnet restore
@@ -31,10 +28,7 @@ jobs:
           name: FoodBuddy_Artifact
           path: release
           
-      - name: Commit release to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@3.7.1
-        with:
-           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-           BRANCH: release
-           FOLDER: release
+      - name: GitHub Releases
+        uses: fnkr/github-action-ghr@v1.3
+        
 
