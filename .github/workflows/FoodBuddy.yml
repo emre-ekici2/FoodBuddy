@@ -12,6 +12,9 @@ jobs:
       - uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 3.1.x
+          
+      - name: Install rsync
+        uses: actions/setup-rsync@v1
 
       - name: Restore dependencies
         run: dotnet restore
