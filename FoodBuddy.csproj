@@ -4,7 +4,6 @@
     <OutputType>winExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
 	<RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
-	  <PublishSingleFile>true</PublishSingleFile>
 
 	  <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
