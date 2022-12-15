@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lL8CNsUC7HnZ0s5bJvTaZHzANRkbrpCnZvIx5hYDrR2AiS54QLzbhRR3vce0Y8ccK3+gp0i8vEsp2YXFSc6eOw==",
+  "dgSpecHash": "ui9MXsOr4ZQoN9u7JXJBiiBtqPdB5S/+tfCiFPy93UlDgJ7kpMzfbixNpec2m/7iBT6aZJbTn7aT9S+QqRIZ8g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\emree\\source\\repos\\FoodBuddy\\FoodBuddy.csproj",
+  "projectFilePath": "C:\\Users\\emree\\Desktop\\FoodBud\\FoodBuddy\\FoodBuddy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emree\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\emree\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

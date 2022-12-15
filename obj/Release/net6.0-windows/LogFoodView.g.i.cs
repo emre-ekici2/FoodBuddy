@@ -93,7 +93,7 @@ namespace FoodBuddy {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FoodBuddy;component/logfoodview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FoodBuddy;V1.0.0.0;component/logfoodview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\LogFoodView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

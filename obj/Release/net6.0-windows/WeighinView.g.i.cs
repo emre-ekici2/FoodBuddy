@@ -93,7 +93,7 @@ namespace FoodBuddy {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FoodBuddy;component/weighinview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FoodBuddy;V1.0.0.0;component/weighinview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\WeighinView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

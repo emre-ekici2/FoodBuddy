@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\emree\\source\\repos\\FoodBuddy\\FoodBuddy.csproj": {}
+    "C:\\Users\\emree\\Desktop\\FoodBud\\FoodBuddy\\FoodBuddy.csproj": {}
   },
   "projects": {
-    "C:\\Users\\emree\\source\\repos\\FoodBuddy\\FoodBuddy.csproj": {
+    "C:\\Users\\emree\\Desktop\\FoodBud\\FoodBuddy\\FoodBuddy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emree\\source\\repos\\FoodBuddy\\FoodBuddy.csproj",
+        "projectUniqueName": "C:\\Users\\emree\\Desktop\\FoodBud\\FoodBuddy\\FoodBuddy.csproj",
         "projectName": "FoodBuddy",
-        "projectPath": "C:\\Users\\emree\\source\\repos\\FoodBuddy\\FoodBuddy.csproj",
+        "projectPath": "C:\\Users\\emree\\Desktop\\FoodBud\\FoodBuddy\\FoodBuddy.csproj",
         "packagesPath": "C:\\Users\\emree\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emree\\source\\repos\\FoodBuddy\\obj\\",
+        "outputPath": "C:\\Users\\emree\\Desktop\\FoodBud\\FoodBuddy\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\emree\\AppData\\Roaming\\NuGet\\NuGet.Config",
