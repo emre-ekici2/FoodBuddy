@@ -2,32 +2,33 @@ name: "Deploy FoodBuddy"
 
 on:
   push:
-
+    
 jobs:
   deploy:
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
 
-      - uses: actions/setup-dotnet@v3
+      - uses: actions/setup-dotnet@v1
         with:
           dotnet-version: 3.1.x
 
-      - name: Restore dependencies
-        run: dotnet restore
+      - run: dotnet restore FoodBuddy.csproj
 
-      - name: Build
-        run: dotnet build --no-restore
+      - run: dotnet build FoodBuddy.csproj -c Release --no-restore
 
-      - name: Publish
-        run: dotnet publish FoodBuddy.csproj -c Release -o release
-      
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v2
+      - run: dotnet publish FoodBuddy.csproj -c Release --self-contained -r win-x64 /-p:PublishSingleFile=true --no-build
+
+      - uses: actions/create-release@v1
+        id: create_release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          name: FoodBuddy_Artifact
-          path: release
-          
+          tag_name: ${{ github.ref }}
+          release_name: ${{ github.ref }}
 
-        
-
+      - uses: csexton/release-asset-action@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          pattern: /bin/Release/net6.0-windows/win-x64/publish/*.exe
+          release-url: ${{ steps.create_release.outputs.upload_url }}
