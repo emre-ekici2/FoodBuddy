@@ -20,7 +20,7 @@ jobs:
         run: dotnet build --no-restore
 
       - name: Publish
-        run: dotnet publish FoodBuddy.csproj -c Release -o release -r win-x64 -p:PublishSingleFile=true
+        run: dotnet publish FoodBuddy.csproj -c Release -o release -r win-x64 -p:PublishSingleFile=true -p:PublishTrimmed=true
       
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
